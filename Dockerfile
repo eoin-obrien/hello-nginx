@@ -1,2 +1,2 @@
-FROM nginx:stable-alpine
-COPY health /usr/share/nginx/html/health
+FROM nginx
+COPY index.html /usr/share/nginx/html/index.html

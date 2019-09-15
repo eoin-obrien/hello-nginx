@@ -1,17 +1,8 @@
 environments:
 - name: acceptance
-  provider: eks
 - name: production
-  provider: eks
-
 service:
   port: 80
+  healthEndpoint: /
   pathPatterns:
   - /*
-
-
-## Configure EKS RBAC 
-rbac:
-- role: admin
-  users:
-  - casey.lee
